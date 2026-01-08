@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emmanuel Adeoye | Blockchain & Full Stack Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- ========== SIDEBAR ========== -->
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/avatar.png"
+              alt="Emmanuel Adeoye"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Emmanuel Adeoye">Emmanuel Adeoye</h1>
+            <p class="title">Full Stack Developer | Startup Founder</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a href="mailto:emmanueladeoye5678@gmail.com" class="contact-link"
+                  >emmanueladeoye5678@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+                <a href="tel:+2348145751646" class="contact-link">(+234) 0814 575 1646</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="school-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">University</p>
+                <span>University of Ibadan</span>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+                <address>Ibadan, Nigeria</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="https://github.com/Adeolu5678" target="_blank" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="https://linkedin.com/in/emmylex5678" target="_blank" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="https://x.com/EmmylexJnr5678" target="_blank" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- ========== MAIN CONTENT ========== -->
+      <div class="main-content">
+        <!-- NAVBAR -->
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- ========== ABOUT ========== -->
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About Me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              Innovative Computer Science undergraduate and <strong>Startup Founder</strong> with hands-on 
+              experience building production-grade full-stack applications. Proficient in the Node.js ecosystem 
+              (TypeScript, Next.js, Express) and modern frontend frameworks like React. Proven ability to 
+              architect decentralized systems, manage monorepos, and deploy scalable solutions.
+            </p>
+            <p>
+              Beyond coding, I bring expertise in digital marketing, content creation, and social media management. 
+              Fluent in English (C2), conversational German (B2), and native Yoruba speaker. 
+              Passionate about building technology that bridges innovation with real-world impact.
+            </p>
+          </section>
+
+          <!-- SERVICES -->
+          <section class="service">
+            <h3 class="h3 service-title">What I'm Doing</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <ion-icon name="code-slash-outline"></ion-icon>
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Full Stack Development</h4>
+                  <p class="service-item-text">
+                    Building end-to-end applications with React, Next.js, Node.js,
+                    Express, TypeScript, and modern database solutions.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <ion-icon name="server-outline"></ion-icon>
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Backend & APIs</h4>
+                  <p class="service-item-text">
+                    RESTful APIs, PostgreSQL, Convex real-time DB, authentication,
+                    smart contracts, and fintech-grade security.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <ion-icon name="phone-portrait-outline"></ion-icon>
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Mobile Development</h4>
+                  <p class="service-item-text">
+                    Cross-platform apps with React Native (Expo), and currently
+                    expanding skills with Flutter development.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <ion-icon name="megaphone-outline"></ion-icon>
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Digital Marketing</h4>
+                  <p class="service-item-text">
+                    Social media management, content creation, video editing,
+                    SEO, and data-driven marketing strategies.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!-- CLIENTS -->
+          <section class="clients">
+            <h3 class="h3 clients-title">Clients</h3>
+            <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/client-1.png" alt="Modern Technologies" />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/client-2.png" alt="Nebula Innovations" />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/client-1.png" alt="Tech Solutions" />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/client-2.png" alt="Future Labs" />
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- ========== RESUME ========== -->
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">University of Ibadan</h4>
+                <span>Current</span>
+                <p class="timeline-text">
+                  Bachelor of Science in Computer Science. Focus: Distributed Systems, 
+                  Cryptography, Database Management, and Algorithms.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Certifications</h4>
+                <span>2022 — 2023</span>
+                <p class="timeline-text">
+                  • Flutter Development Bootcamp (Udemy, 2023)<br>
+                  • Web Design (iDesign Pro Academy, 2022)<br>
+                  • 3x RC Drone Construction Competition Winner
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="briefcase-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  VentureDeck — Founder & Lead Full Stack Developer
+                </h4>
+                <span>Oct 2024 — Present</span>
+                <p class="timeline-text">
+                  Developed dual-interface startup launchpad with React (Next.js) and TypeScript.
+                  Architected real-time backend using Convex, designed efficient database schemas,
+                  and managed full software lifecycle to deployment.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">EchoinWhispr — Founder & Lead Engineer</h4>
+                <span>July 2023 — Present</span>
+                <p class="timeline-text">
+                  Built decentralized social dApp using Next.js and React Native with
+                  smart contracts (Solidity) on Hedera. Implemented E2E encryption (ECIES)
+                  and IPFS storage with pnpm monorepo structure.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Social Media Manager — Smolux Autos</h4>
+                <span>Mar 2025 — July 2025</span>
+                <p class="timeline-text">
+                  Managed TikTok/WhatsApp pages for car listings. Captured and edited
+                  high-quality photos/videos, increasing online visibility and sales leads.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Freelance — Software Developer</h4>
+                <span>July 2023 — Present</span>
+                <p class="timeline-text">
+                  Developed full-stack applications with PostgreSQL, Express, and React.
+                  Managed digital marketing strategies and content creation for local businesses.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My Skills</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">React / Next.js / TypeScript</h5>
+                  <data value="95">95%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 95%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Node.js / Express / APIs</h5>
+                  <data value="90">90%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">PostgreSQL / Convex / IPFS</h5>
+                  <data value="85">85%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 85%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Digital Marketing / Content</h5>
+                  <data value="80">80%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!-- DOWNLOAD RESUME -->
+          <section class="download-resume">
+            <button class="download-btn" onclick="downloadResume()">
+              <ion-icon name="download-outline"></ion-icon>
+              <span>Download Resume</span>
+            </button>
+          </section>
+        </article>
+
+        <!-- ========== PORTFOLIO ========== -->
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Web3 / Blockchain</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Web Development</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Fintech</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-select-value>
+                  Select category
+                </div>
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Web3 / Blockchain</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Web Development</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Fintech</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web3 / blockchain"
+              >
+                <a href="https://github.com/Adeolu5678/EchoinWhispr" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-6.png"
+                      alt="EchoinWhispr"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">EchoinWhispr</h3>
+                  <p class="project-category">Web3 / Blockchain</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="fintech"
+              >
+                <a href="https://github.com/Adeolu5678/VentureDeck" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-1.png"
+                      alt="VentureDeck"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">VentureDeck</h3>
+                  <p class="project-category">Fintech</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github.com/Adeolu5678" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-2.png"
+                      alt="Portfolio Website"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Portfolio Website</h3>
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web3 / blockchain"
+              >
+                <a href="https://github.com/Adeolu5678" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-5.png"
+                      alt="Smart Contract Suite"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Smart Contract Suite</h3>
+                  <p class="project-category">Web3 / Blockchain</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="fintech"
+              >
+                <a href="https://github.com/Adeolu5678" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-4.png"
+                      alt="Payment Gateway"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Payment Gateway Integration</h3>
+                  <p class="project-category">Fintech</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github.com/Adeolu5678" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-3.png"
+                      alt="Admin Dashboard"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Admin Dashboard</h3>
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- ========== BLOG ========== -->
+        <article class="blog" data-page="blog">
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
+
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-1.png"
+                      alt="Web3 Development"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Blockchain</p>
+                      <span class="dot"></span>
+                      <time datetime="2024-01-15">Jan 15, 2024</time>
+                    </div>
+                    <h3 class="h3 blog-item-title">
+                      Getting Started with Hedera Consensus Service
+                    </h3>
+                    <p class="blog-text">
+                      Learn how to build decentralized applications using Hedera's
+                      Consensus Service for scalable messaging...
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-2.png"
+                      alt="Smart Contracts"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Web3</p>
+                      <span class="dot"></span>
+                      <time datetime="2024-01-10">Jan 10, 2024</time>
+                    </div>
+                    <h3 class="h3 blog-item-title">
+                      Writing Secure Solidity Smart Contracts
+                    </h3>
+                    <p class="blog-text">
+                      Best practices for writing secure, gas-efficient smart 
+                      contracts using Solidity and Hardhat...
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-3.png"
+                      alt="IPFS Storage"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Decentralized</p>
+                      <span class="dot"></span>
+                      <time datetime="2024-01-05">Jan 05, 2024</time>
+                    </div>
+                    <h3 class="h3 blog-item-title">
+                      IPFS & Filecoin: Decentralized Storage Guide
+                    </h3>
+                    <p class="blog-text">
+                      A comprehensive guide to storing content on IPFS and Filecoin
+                      for your decentralized applications...
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-4.png"
+                      alt="Payment Integration"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Fintech</p>
+                      <span class="dot"></span>
+                      <time datetime="2024-01-01">Jan 01, 2024</time>
+                    </div>
+                    <h3 class="h3 blog-item-title">
+                      Integrating Paystack & Flutterwave in Next.js
+                    </h3>
+                    <p class="blog-text">
+                      Step-by-step tutorial on implementing secure payment 
+                      integrations for your fintech applications...
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- ========== CONTACT ========== -->
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox">
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126915.67829951962!2d3.8230916!3d7.3775541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103992cae5c91b2b%3A0x56c2e8e1e8e26e58!2sIbadan%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1704700000000!5m2!1sen!2sus"
+                width="100%"
+                height="300"
+                style="border: 0; filter: grayscale(1) invert(1)"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!-- Custom JS -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
