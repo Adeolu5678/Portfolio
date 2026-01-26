@@ -202,21 +202,36 @@ function downloadResume() {
       </div>
       
       <div class="section">
-        <h3 class="section-title">Education & Certifications</h3>
+        <h3 class="section-title">Education</h3>
         <div class="timeline-item">
           <h4>University of Ibadan</h4>
           <span>Current</span>
           <p>B.Sc. Computer Science — Distributed Systems, Cryptography, Database Management</p>
         </div>
         <div class="timeline-item">
-          <h4>Certifications</h4>
-          <span>2022 — 2023</span>
-          <p>• Flutter Development Bootcamp (Udemy) • Web Design (iDesign Pro Academy) • 3x RC Drone Competition Winner</p>
+          <h4>WASSCE — West African Examination Council</h4>
+          <span>August 2023</span>
+          <p>West African Senior School Certificate Examination</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Certifications & Achievements</h4>
+          <span>2022 — 2025</span>
+          <p>• Flutter Development Bootcamp (Udemy) • Web Design (iDesign Pro Academy) • 3x RC Drone & Car Competition Winner</p>
         </div>
       </div>
       
       <div class="section">
-        <h3 class="section-title">Professional Experience</h3>
+        <h3 class="section-title">Engineering & Development</h3>
+        <div class="timeline-item">
+          <h4>PadeeSpace — Backend Engineer</h4>
+          <span>Jan 2026 — Present</span>
+          <p>Backend infrastructure for collaborative learning marketplace. Payment processing and PDT Token rewards using PERN stack.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>StakeIt — Backend & Web3 Lead</h4>
+          <span>November 2025 (Hedera Hackathon)</span>
+          <p>Web3 goal accountability platform on Hedera Network. Secure, decentralized data handling.</p>
+        </div>
         <div class="timeline-item">
           <h4>VentureDeck — Founder & Lead Full Stack Developer</h4>
           <span>Oct 2024 — Present</span>
@@ -225,12 +240,26 @@ function downloadResume() {
         <div class="timeline-item">
           <h4>EchoinWhispr — Founder & Lead Engineer</h4>
           <span>July 2023 — Present</span>
-          <p>Decentralized social dApp with Next.js, React Native, Solidity smart contracts, E2E encryption.</p>
+          <p>Decentralized social dApp with Next.js, React Native, Solidity smart contracts, E2E encryption (ECIES).</p>
+        </div>
+      </div>
+      
+      <div class="section">
+        <h3 class="section-title">Additional Experience</h3>
+        <div class="timeline-item">
+          <h4>Social Media Manager — Great Eminent RE & Smolux Autos</h4>
+          <span>Oct 2024 — July 2025</span>
+          <p>Digital presence management, content creation, video/photo editing, Jiji.ng optimization.</p>
         </div>
         <div class="timeline-item">
-          <h4>Freelance — Software Developer & Digital Marketing</h4>
+          <h4>Editorial Assistant — The Nigerian Baptist Convention</h4>
+          <span>Oct 2023 — Dec 2023</span>
+          <p>Manuscript proofreading, content coherence, publication quality assurance.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Founder / Retail Manager — Self-Employed</h4>
           <span>July 2023 — Present</span>
-          <p>Full-stack apps with PostgreSQL/Express/React. Social media management and content creation.</p>
+          <p>Phone resale business management, inventory, sales, and customer relations.</p>
         </div>
       </div>
       
@@ -238,9 +267,11 @@ function downloadResume() {
         <h3 class="section-title">Technical Skills</h3>
         <div class="skills-grid">
           <div class="skill-item"><span>React / Next.js / TypeScript</span><span>95%</span></div>
-          <div class="skill-item"><span>Node.js / Express / APIs</span><span>90%</span></div>
+          <div class="skill-item"><span>Node.js / Express / Python</span><span>90%</span></div>
           <div class="skill-item"><span>PostgreSQL / Convex / IPFS</span><span>85%</span></div>
-          <div class="skill-item"><span>Digital Marketing / Content</span><span>80%</span></div>
+          <div class="skill-item"><span>Creative Tools (Adobe / DaVinci)</span><span>85%</span></div>
+          <div class="skill-item"><span>Digital Marketing / SEO</span><span>80%</span></div>
+          <div class="skill-item"><span>Leadership / Project Management</span><span>75%</span></div>
         </div>
         <p style="margin-top: 10px; color: #666; font-size: 12px;"><strong>Languages:</strong> English (C2), German (B2), Yoruba (Native)</p>
       </div>
