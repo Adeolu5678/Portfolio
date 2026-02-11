@@ -2091,3 +2091,50 @@ textarea.form-input::-webkit-resizer {
   }
 }
 
+/*-----------------------------------*\
+  #PROJECT TAGS & FEATURED STYLES
+\*-----------------------------------*/
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 10px;
+}
+
+.project-item.featured {
+  position: relative;
+}
+
+.project-item.featured::after {
+  content: "Featured";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--text-gradient-yellow);
+  color: var(--smoky-black);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: var(--fs-8);
+  font-weight: var(--fw-600);
+  text-transform: uppercase;
+  z-index: 2;
+  box-shadow: var(--shadow-1);
+}
+
+.web3-tag,
+.blockchain-tag,
+.architecture-tag {
+  border: 1px solid var(--orange-yellow-crayola) !important;
+  color: var(--orange-yellow-crayola) !important;
+}
+
+.project-item.featured .project-img {
+  border: 1px solid rgba(255, 219, 112, 0.3);
+  box-shadow: 0 0 15px rgba(255, 219, 112, 0.1);
+}
+
+.project-item.featured:hover .project-img {
+  border-color: var(--orange-yellow-crayola);
+  box-shadow: 0 0 20px rgba(255, 219, 112, 0.2);
+}
