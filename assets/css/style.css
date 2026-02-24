@@ -317,7 +317,7 @@ article.active {
 
 main {
   margin: 15px 12px;
-  margin-bottom: 75px;
+  margin-bottom: 100px;
   min-width: 259px;
 }
 
@@ -494,10 +494,19 @@ main {
 
 .navbar-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
   align-items: center;
   padding: 0 10px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  overscroll-behavior-inline: contain;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.navbar-list::-webkit-scrollbar {
+  display: none;
 }
 
 .navbar-link {
@@ -505,6 +514,7 @@ main {
   font-size: var(--fs-8);
   padding: 20px 7px;
   transition: color var(--transition-1);
+  white-space: nowrap;
 }
 
 .navbar-link:hover,
