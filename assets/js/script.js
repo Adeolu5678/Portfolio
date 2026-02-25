@@ -249,7 +249,7 @@ function downloadResume() {
         <div class="timeline-item">
           <h4>PadeeSpace — Backend Engineer</h4>
           <span>Jan 2026 — Present</span>
-          <p>Backend infrastructure for collaborative learning marketplace. Payment processing and PDT Token rewards using PERN stack.</p>
+          <p>Backend infrastructure for collaborative learning marketplace. Escrow protection and SKO payment processing using React and Node.js.</p>
         </div>
         <div class="timeline-item">
           <h4>StakeIt — Backend & Web3 Lead</h4>
@@ -259,7 +259,7 @@ function downloadResume() {
         <div class="timeline-item">
           <h4>VentureDeck — Founder & Lead Full Stack Developer</h4>
           <span>Oct 2024 — Present</span>
-          <p>Dual-interface startup launchpad with React (Next.js), TypeScript, and Convex real-time backend.</p>
+          <p>Dual-interface startup launchpad with AI Traction Scoring, React (Next.js 15), TypeScript, and Convex real-time backend.</p>
         </div>
         <div class="timeline-item">
           <h4>EchoinWhispr — Founder & Lead Engineer</h4>
