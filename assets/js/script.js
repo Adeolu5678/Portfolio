@@ -239,8 +239,8 @@ function downloadResume() {
         </div>
         <div class="timeline-item">
           <h4>Certifications & Achievements</h4>
-          <span>2022 — 2025</span>
-          <p>• Flutter Development Bootcamp (Udemy) • Web Design (iDesign Pro Academy) • 3x RC Drone & Car Competition Winner</p>
+          <span>2022 — 2026</span>
+          <p>• Hedera Certified Developer (HCD) • OpenJS Node.js Application Developer • AWS Certified Developer – Associate • Google Cloud Professional Machine Learning Engineer • Certified Blockchain Developer – Ethereum • Flutter Development Bootcamp (Udemy) • Web Design (iDesign Pro Academy)</p>
         </div>
       </div>
       
