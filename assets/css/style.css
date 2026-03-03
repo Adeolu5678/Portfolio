@@ -20,7 +20,8 @@
     hsl(240, 1%, 25%) 3%,
     hsl(0, 0%, 19%) 97%
   );
-  --bg-gradient-jet: linear-gradient(
+  --bg-gradient-jet:
+    linear-gradient(
       to bottom right,
       hsla(240, 1%, 18%, 0.251) 0%,
       hsla(240, 2%, 11%, 0) 100%
@@ -31,7 +32,8 @@
     hsl(45, 100%, 71%) 0%,
     hsla(36, 100%, 69%, 0) 50%
   );
-  --bg-gradient-yellow-2: linear-gradient(
+  --bg-gradient-yellow-2:
+    linear-gradient(
       135deg,
       hsla(45, 100%, 71%, 0.251) 0%,
       hsla(35, 100%, 68%, 0) 59.86%
@@ -865,8 +867,9 @@ main {
   }
 }
 
-.project-item > a {
+.project-item > .project-content {
   width: 100%;
+  cursor: default;
 }
 
 .project-img {
@@ -890,7 +893,7 @@ main {
   transition: var(--transition-1);
 }
 
-.project-item > a:hover .project-img::before {
+.project-item > .project-content:hover .project-img::before {
   background: hsla(0, 0%, 0%, 0.5);
 }
 
@@ -911,7 +914,7 @@ main {
   transition: var(--transition-1);
 }
 
-.project-item > a:hover .project-item-icon-box {
+.project-item > .project-content:hover .project-item-icon-box {
   --scale: 1;
   opacity: 1;
 }
@@ -923,7 +926,7 @@ main {
   transition: var(--transition-1);
 }
 
-.project-item > a:hover img {
+.project-item > .project-content:hover img {
   transform: scale(1.1);
 }
 
@@ -1732,7 +1735,8 @@ textarea.form-input::-webkit-resizer {
     border: 5px solid var(--smoky-black);
     background: hsla(0, 0%, 100%, 0.1);
     border-radius: 20px;
-    box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
+    box-shadow:
+      inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
       inset -1px -1px 0 hsla(0, 0%, 100%, 0.11);
   }
 
