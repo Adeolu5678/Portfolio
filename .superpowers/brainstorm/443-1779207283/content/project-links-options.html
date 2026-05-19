@@ -1,0 +1,107 @@
+<h2>Project Card Interaction</h2>
+<p class="subtitle">Three directions for making portfolio projects tappable without breaking the existing dark editorial feel.</p>
+
+<div class="cards">
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup">
+        <div class="mockup-header">Option A · Recommended</div>
+        <div class="mockup-body" style="background:#1b1b1d;border-radius:16px;padding:18px;min-height:260px;border:1px solid rgba(255,219,112,.12);">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;">
+            <div>
+              <div class="label">Featured Project</div>
+              <h3 style="margin:6px 0 4px 0;">Open-Higgsfield-AI</h3>
+              <p style="margin:0;color:#c7c7c7;font-size:13px;">Open-Source AI Media Studio</p>
+            </div>
+            <div style="padding:6px 10px;border-radius:999px;background:rgba(255,219,112,.1);border:1px solid rgba(255,219,112,.22);color:#ffdb70;font-size:11px;letter-spacing:.08em;text-transform:uppercase;">Live</div>
+          </div>
+          <div style="margin-top:18px;display:flex;gap:8px;flex-wrap:wrap;">
+            <span style="padding:6px 10px;border-radius:999px;background:#232326;color:#d6d6d6;font-size:12px;">Next.js 15</span>
+            <span style="padding:6px 10px;border-radius:999px;background:#232326;color:#d6d6d6;font-size:12px;">React 19</span>
+            <span style="padding:6px 10px;border-radius:999px;background:#232326;color:#d6d6d6;font-size:12px;">Electron</span>
+          </div>
+          <div style="margin-top:18px;border-left:2px solid rgba(255,219,112,.35);padding-left:12px;color:#d0d0d0;font-size:13px;line-height:1.55;">
+            Tap anywhere on the card to visit the live site. Hover adds a soft gold lift and a tiny external-link hint in the top-right.
+          </div>
+          <div style="margin-top:18px;display:flex;justify-content:flex-end;">
+            <div style="display:flex;align-items:center;gap:8px;color:#ffdb70;font-size:12px;letter-spacing:.06em;text-transform:uppercase;">
+              <span>Visit Project</span>
+              <span style="font-size:14px;">↗</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>Subtle Status Pill + Full-Card Click</h3>
+      <p>Live projects get a small gold “Live” pill. NDA/private projects get an “NDA” pill and open a compact disclosure modal.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup">
+        <div class="mockup-header">Option B</div>
+        <div class="mockup-body" style="background:#1b1b1d;border-radius:16px;padding:18px;min-height:260px;border:1px solid rgba(255,219,112,.12);position:relative;">
+          <div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 0%,rgba(0,0,0,.45) 100%);border-radius:16px;"></div>
+          <div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column;justify-content:space-between;">
+            <div>
+              <div class="label">Project Access</div>
+              <h3 style="margin:10px 0 8px 0;">VentureDeck</h3>
+              <p style="margin:0;color:#c7c7c7;font-size:13px;max-width:280px;">A large bottom CTA bar appears inside every card.</p>
+            </div>
+            <div style="display:flex;gap:10px;align-items:center;justify-content:space-between;padding:12px 14px;border-radius:12px;background:rgba(255,219,112,.08);border:1px solid rgba(255,219,112,.18);">
+              <span style="color:#e8e8e8;font-size:13px;">NDA Protected</span>
+              <span style="color:#ffdb70;font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Request Access</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>Persistent CTA Strip</h3>
+      <p>Every card shows a bottom action bar. Clearer, but visually heavier and more product-card-like than the current portfolio style.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup">
+        <div class="mockup-header">Option C</div>
+        <div class="mockup-body" style="background:#1b1b1d;border-radius:16px;padding:18px;min-height:260px;border:1px solid rgba(255,219,112,.12);">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <h3 style="margin:0;">Cloud-Terminal</h3>
+            <span style="color:#ffdb70;font-size:13px;">•••</span>
+          </div>
+          <p style="margin:10px 0 16px 0;color:#c7c7c7;font-size:13px;">Actions stay hidden until tap/hover reveals a small popover menu.</p>
+          <div style="margin-top:30px;display:flex;justify-content:flex-end;">
+            <div style="width:170px;border-radius:14px;background:#121214;border:1px solid rgba(255,219,112,.16);padding:10px;box-shadow:0 18px 30px rgba(0,0,0,.35);">
+              <div style="padding:10px 12px;border-radius:10px;color:#f2f2f2;font-size:13px;background:rgba(255,219,112,.08);">Visit Live Project</div>
+              <div style="padding:10px 12px;color:#c9c9c9;font-size:13px;">Why not public?</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>Popover Actions</h3>
+      <p>Most compact, but it adds an extra interaction step and feels less immediate on mobile taps.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="mockup">
+    <div class="mockup-header">NDA Message Preview</div>
+    <div class="mockup-body" style="display:flex;justify-content:center;align-items:center;min-height:220px;">
+      <div style="width:min(420px,100%);background:#1b1b1d;border:1px solid rgba(255,219,112,.18);border-radius:18px;padding:22px;box-shadow:0 24px 60px rgba(0,0,0,.35);">
+        <div class="label">Private Work</div>
+        <h3 style="margin:8px 0 10px 0;">Project Access Restricted</h3>
+        <p style="margin:0 0 16px 0;color:#c8c8c8;line-height:1.6;">A non-disclosure agreement was signed for this project, so the live deployment cannot be shared publicly in this portfolio.</p>
+        <div style="display:flex;justify-content:flex-end;">
+          <button class="mock-button" style="background:linear-gradient(135deg,#ffdb70,#d4a938);color:#111;">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

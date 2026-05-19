@@ -1388,6 +1388,28 @@
       </div>
     </main>
 
+    <div class="project-modal-backdrop" data-nda-modal-backdrop hidden>
+      <div
+        class="project-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="nda-modal-title"
+        aria-describedby="nda-modal-description"
+        data-nda-modal
+      >
+        <button class="project-modal-close" type="button" aria-label="Close message" data-nda-modal-close>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+        <p class="project-modal-label">Private Work</p>
+        <h3 class="h3 project-modal-title" id="nda-modal-title">Project Access Restricted</h3>
+        <p class="project-modal-project" data-nda-project-name></p>
+        <p class="project-modal-description" id="nda-modal-description">
+          A non-disclosure agreement was signed for this project, so the live deployment cannot be shared publicly in this portfolio.
+        </p>
+        <button class="project-modal-action" type="button" data-nda-modal-close>Close</button>
+      </div>
+    </div>
+
     <!-- Custom JS -->
     <script src="./assets/js/script.js"></script>
   </body>

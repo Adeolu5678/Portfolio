@@ -71,6 +71,141 @@ if (filterBtn.length > 0) {
   }
 }
 
+const projectAccessMap = {
+  "Command Centre": { access: "nda" },
+  "VentureDeck": { access: "nda" },
+  "Open-Higgsfield-AI": { access: "nda" },
+  "LegalEase": { access: "nda" },
+  "EchoinWhispr": { access: "live", url: "https://echoinwhispr.vercel.app" },
+  "VozParking": { access: "nda" },
+  "Exam-Killer": { access: "nda" },
+  "Cloud-Terminal": { access: "live", url: "https://cloudterminal.vercel.app" },
+  "ATBANSSS Group": { access: "nda" },
+  "IntellyDoc": { access: "nda" },
+  "PadeeSpace": { access: "nda" },
+  "StakeIt": { access: "nda" },
+  "Rommel Security (SMW)": { access: "live", url: "https://sikky-smw.vercel.app" },
+  "Intelligencia": { access: "live", url: "https://intelli.nuelbuilds.dev" },
+  "AI Website Cloner": { access: "nda" },
+  "SuperWay": { access: "nda" },
+  "KudiFlow": { access: "nda" },
+  "NuelBuilds Agency": { access: "live", url: "https://agency.nuelbuilds.dev" },
+  "Dr. Mary Adeoye Portfolio": { access: "live", url: "https://adeoye.nuelbuilds.dev" },
+  "Comfort Adeoye Portfolio": { access: "live", url: "https://client2-portfolio.vercel.app" },
+  "Prof. Ayangunna Portfolio": { access: "live", url: "https://prof.nuelbuilds.dev" },
+  "Portfolio": { access: "live", url: "https://www.nuelbuilds.dev" },
+  "Telemetry (SaaS Template)": { access: "live", url: "https://template-saas-landing-page.vercel.app" },
+  "VIP Concierge Demo": { access: "live", url: "https://demo-flutter-application.vercel.app" },
+  "Workflow-Template": { access: "nda" },
+  "VozParking Prototype": { access: "nda" },
+  "MakeBelieve": { access: "nda" },
+  "PCI-Services": { access: "live", url: "https://pci-services.vercel.app" },
+  "Garrison-Plumbing": { access: "live", url: "https://garrison-plumbing.vercel.app" },
+  "Delron-Services": { access: "live", url: "https://delron-services.vercel.app" },
+  "Demo-Project-2": { access: "nda" },
+  "stake-it-78583": { access: "nda" }
+};
+
+const ndaModalBackdrop = document.querySelector("[data-nda-modal-backdrop]");
+const ndaProjectName = document.querySelector("[data-nda-project-name]");
+const ndaModalCloseButtons = document.querySelectorAll("[data-nda-modal-close]");
+
+const openNdaModal = function (projectName) {
+  if (!ndaModalBackdrop || !ndaProjectName) return;
+
+  ndaProjectName.textContent = projectName;
+  ndaModalBackdrop.hidden = false;
+  document.body.style.overflow = "hidden";
+};
+
+const closeNdaModal = function () {
+  if (!ndaModalBackdrop) return;
+
+  ndaModalBackdrop.hidden = true;
+  document.body.style.overflow = "";
+};
+
+if (ndaModalBackdrop) {
+  ndaModalBackdrop.addEventListener("click", function (event) {
+    if (event.target === ndaModalBackdrop) {
+      closeNdaModal();
+    }
+  });
+}
+
+if (ndaModalCloseButtons.length > 0) {
+  for (let i = 0; i < ndaModalCloseButtons.length; i++) {
+    ndaModalCloseButtons[i].addEventListener("click", closeNdaModal);
+  }
+}
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape" && ndaModalBackdrop && !ndaModalBackdrop.hidden) {
+    closeNdaModal();
+  }
+});
+
+const projectCards = document.querySelectorAll(".client-work .project-item > .project-content");
+
+if (projectCards.length > 0) {
+  const activateProjectCard = function (projectName, projectConfig) {
+    if (projectConfig.access === "live" && projectConfig.url) {
+      window.open(projectConfig.url, "_blank", "noopener,noreferrer");
+    } else {
+      openNdaModal(projectName);
+    }
+  };
+
+  for (let i = 0; i < projectCards.length; i++) {
+    const card = projectCards[i];
+    const titleElement = card.querySelector(".project-title");
+
+    if (!titleElement) continue;
+
+    const projectName = titleElement.textContent.trim();
+    const projectConfig = projectAccessMap[projectName] || { access: "nda" };
+    const isLive = projectConfig.access === "live" && projectConfig.url;
+
+    card.classList.add("project-card-linkable");
+    card.setAttribute("tabindex", "0");
+    card.setAttribute("role", "button");
+    card.setAttribute("data-project-access", isLive ? "live" : "nda");
+    card.setAttribute(
+      "aria-label",
+      isLive
+        ? `Visit ${projectName}`
+        : `${projectName} is NDA protected`
+    );
+
+    const statusRow = document.createElement("div");
+    statusRow.className = "project-card-status-row";
+
+    const statusPill = document.createElement("span");
+    statusPill.className = `project-card-status ${isLive ? "project-card-status--live" : "project-card-status--nda"}`;
+    statusPill.textContent = isLive ? "Live" : "NDA";
+    statusRow.appendChild(statusPill);
+    card.prepend(statusRow);
+
+    const action = document.createElement("div");
+    action.className = "project-card-action";
+    action.innerHTML = isLive
+      ? '<span>Visit Project</span><ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>'
+      : '<span>NDA Protected</span><ion-icon name="lock-closed-outline" aria-hidden="true"></ion-icon>';
+    card.appendChild(action);
+
+    card.addEventListener("click", function () {
+      activateProjectCard(projectName, projectConfig);
+    });
+
+    card.addEventListener("keydown", function (event) {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        activateProjectCard(projectName, projectConfig);
+      }
+    });
+  }
+}
+
 // contact form variables
 const form = document.querySelector("[data-form]");
 const formInputs = document.querySelectorAll("[data-form-input]");
