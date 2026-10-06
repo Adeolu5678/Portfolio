@@ -75,9 +75,9 @@ const projectAccessMap = {
   "Command Centre": { access: "nda" },
   "VentureDeck": { access: "nda" },
   "Open-Higgsfield-AI": { access: "nda" },
-  "LegalEase": { access: "nda" },
+  "LegalEase": { access: "live", url: "https://github.com/Adeolu5678/LegalEase" },
   "EchoinWhispr": { access: "live", url: "https://echoinwhispr.vercel.app" },
-  "VozParking": { access: "nda" },
+  "VozParking": { access: "live", url: "https://vozparking.com" },
   "Exam-Killer": { access: "nda" },
   "Cloud-Terminal": { access: "live", url: "https://cloudterminal.vercel.app" },
   "ATBANSSS Group": { access: "nda" },
@@ -97,13 +97,11 @@ const projectAccessMap = {
   "Telemetry (SaaS Template)": { access: "live", url: "https://template-saas-landing-page.vercel.app" },
   "VIP Concierge Demo": { access: "live", url: "https://demo-flutter-application.vercel.app" },
   "Workflow-Template": { access: "nda" },
-  "VozParking Prototype": { access: "nda" },
+  "VozParking Prototype": { access: "live", url: "https://vozparking.com" },
   "MakeBelieve": { access: "nda" },
   "PCI-Services": { access: "live", url: "https://pci-services.vercel.app" },
   "Garrison-Plumbing": { access: "live", url: "https://garrison-plumbing.vercel.app" },
-  "Delron-Services": { access: "live", url: "https://delron-services.vercel.app" },
-  "Demo-Project-2": { access: "nda" },
-  "stake-it-78583": { access: "nda" }
+  "Delron-Services": { access: "live", url: "https://delron-services.vercel.app" }
 };
 
 const ndaModalBackdrop = document.querySelector("[data-nda-modal-backdrop]");
@@ -379,58 +377,73 @@ function downloadResume() {
         </div>
       </div>
       
-      <div class="section">
-        <h3 class="section-title">Engineering & Development</h3>
-        <div class="timeline-item">
-          <h4>PadeeSpace — Backend Engineer</h4>
-          <span>Jan 2026 — Present</span>
-          <p>Backend infrastructure for collaborative learning marketplace. Escrow protection and SKO payment processing using React and Node.js.</p>
+        <div class="section">
+          <h3 class="section-title">Engineering & Development</h3>
+          <div class="timeline-item">
+            <h4>VozParking — Tech Lead & Lead Engineer</h4>
+            <span>Jan 2026 — Present</span>
+            <p>Architected a voice-first iOS companion for the Dutch parking market with Expo SDK 55 and TypeScript strict mode. Engineered conversational intent parsing with Gemini AI and a local-first caching layer unifying RDW, NPR, and OSM endpoints under 2s latency.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>LegalEase — Creator & Lead Systems Engineer</h4>
+            <span>Oct 2025 — Present</span>
+            <p>Engineered and shipped a production-ready AI legal document assistant across 5 platforms (Android, iOS, Web, Windows, macOS). Implemented on-device Google ML Kit OCR, Gemini AI fallback routing, and native accessibility channels for on-screen terms scanning.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>PersonalOS — Systems Architect</h4>
+            <span>2026 — Present</span>
+            <p>Designed a local-first assistant runtime and canonical memory system built on FastAPI, SQLite, and LanceDB. Implemented desktop computer-use actuation, multi-agent task routing, and an autonomous programmatic video editing engine.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>PadeeSpace — Backend Engineer</h4>
+            <span>Jan 2026 — Present</span>
+            <p>Architecting escrow-protected payment flows and token-based reward systems for a peer-to-peer tutoring marketplace — enabling trustless transactions between students and tutors.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>StakeIt — Backend & Web3 Lead</h4>
+            <span>November 2025 (Hedera Hackathon Winner)</span>
+            <p>Led Web3 architecture for a decentralized goal accountability platform on Hedera — engineered smart contract staking mechanisms that cryptographically enforce milestone commitments.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>VentureDeck — Founder & Lead Full Stack Developer</h4>
+            <span>Oct 2024 — Present</span>
+            <p>Built a dual-interface startup launchpad with AI-driven traction scoring and real-time founder-to-VC matching on Convex. Full lifecycle ownership from schema design to deployment.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>EchoinWhispr — Founder & Lead Engineer</h4>
+            <span>July 2023 — Present</span>
+            <p>Architected a decentralized social protocol with ECIES encryption, IPFS content addressing, and Solidity smart contracts on Hedera for censorship-resistant identity and messaging.</p>
+          </div>
         </div>
-        <div class="timeline-item">
-          <h4>StakeIt — Backend & Web3 Lead</h4>
-          <span>November 2025 (Hedera Hackathon)</span>
-          <p>Web3 goal accountability platform on Hedera Network. Secure, decentralized data handling.</p>
+        
+        <div class="section">
+          <h3 class="section-title">Additional Experience</h3>
+          <div class="timeline-item">
+            <h4>Social Media Manager — Great Eminent RE & Smolux Autos</h4>
+            <span>Oct 2024 — July 2025</span>
+            <p>Orchestrated digital presence for real estate and automotive brands across TikTok and WhatsApp — produced visual content driving qualified sales leads.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>Editorial Assistant — The Nigerian Baptist Convention</h4>
+            <span>Oct 2023 — Dec 2023</span>
+            <p>Manuscript proofreading, content coherence, publication quality assurance.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>Founder / Retail Manager — Self-Employed</h4>
+            <span>July 2023 — Present</span>
+            <p>Bootstrapped phone resale business — end-to-end operations including inventory sourcing, pricing strategy, and customer acquisition.</p>
+          </div>
         </div>
-        <div class="timeline-item">
-          <h4>VentureDeck — Founder & Lead Full Stack Developer</h4>
-          <span>Oct 2024 — Present</span>
-          <p>Dual-interface startup launchpad with AI Traction Scoring, React (Next.js 15), TypeScript, and Convex real-time backend.</p>
-        </div>
-        <div class="timeline-item">
-          <h4>EchoinWhispr — Founder & Lead Engineer</h4>
-          <span>July 2023 — Present</span>
-          <p>Decentralized social dApp with Next.js, React Native, Solidity smart contracts, E2E encryption (ECIES).</p>
-        </div>
-      </div>
-      
-      <div class="section">
-        <h3 class="section-title">Additional Experience</h3>
-        <div class="timeline-item">
-          <h4>Social Media Manager — Great Eminent RE & Smolux Autos</h4>
-          <span>Oct 2024 — July 2025</span>
-          <p>Digital presence management, content creation, video/photo editing, Jiji.ng optimization.</p>
-        </div>
-        <div class="timeline-item">
-          <h4>Editorial Assistant — The Nigerian Baptist Convention</h4>
-          <span>Oct 2023 — Dec 2023</span>
-          <p>Manuscript proofreading, content coherence, publication quality assurance.</p>
-        </div>
-        <div class="timeline-item">
-          <h4>Founder / Retail Manager — Self-Employed</h4>
-          <span>July 2023 — Present</span>
-          <p>Phone resale business management, inventory, sales, and customer relations.</p>
-        </div>
-      </div>
       
       <div class="section">
         <h3 class="section-title">Technical Skills</h3>
         <div class="skills-grid">
           <div class="skill-item"><span>React / Next.js / TypeScript</span><span>95%</span></div>
-          <div class="skill-item"><span>Node.js / Express / Python</span><span>90%</span></div>
-          <div class="skill-item"><span>PostgreSQL / Convex / IPFS</span><span>85%</span></div>
-          <div class="skill-item"><span>Creative Tools (Adobe / DaVinci)</span><span>85%</span></div>
-          <div class="skill-item"><span>Digital Marketing / SEO</span><span>80%</span></div>
-          <div class="skill-item"><span>Leadership / Project Management</span><span>75%</span></div>
+          <div class="skill-item"><span>Flutter / Expo / Mobile Dev</span><span>92%</span></div>
+          <div class="skill-item"><span>Node.js / Express / Python / FastAPI</span><span>90%</span></div>
+          <div class="skill-item"><span>PostgreSQL / Convex / LanceDB / SQLite</span><span>88%</span></div>
+          <div class="skill-item"><span>AI Systems & Agents (Gemini, RAG, n8n)</span><span>90%</span></div>
+          <div class="skill-item"><span>Web3 / Hedera / Solidity / Smart Contracts</span><span>85%</span></div>
         </div>
         <p style="margin-top: 10px; color: #666; font-size: 12px;"><strong>Languages:</strong> English (C2), German (B2), Yoruba (Native)</p>
       </div>
