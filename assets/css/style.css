@@ -2453,3 +2453,11 @@ textarea.form-input::-webkit-resizer {
     width: calc((100% - 25px) / 2);
   }
 }
+
+@media (min-width: 1024px) {
+  .featured-case-studies-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
