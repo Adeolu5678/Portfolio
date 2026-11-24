@@ -1,24 +1,24 @@
 {
-  "rewrites": [
+  "routes": [
     {
-      "source": "/",
+      "src": "^/$",
       "has": [
         {
           "type": "host",
           "value": "ai.nuelbuilds.dev"
         }
       ],
-      "destination": "/ai/index.html"
+      "dest": "/ai/index.html"
     },
     {
-      "source": "/",
+      "src": "^/$",
       "has": [
         {
           "type": "host",
           "value": "sec.nuelbuilds.dev"
         }
       ],
-      "destination": "/sec/index.html"
+      "dest": "/sec/index.html"
     }
   ]
 }
