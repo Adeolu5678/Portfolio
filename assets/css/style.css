@@ -2526,3 +2526,14 @@ textarea.form-input::-webkit-resizer {
 }
 
 
+
+/* Aave Specular Liquid Glass Mobile Navbar */
+@media (max-width: 580px) {
+  .navbar {
+    background: linear-gradient(180deg, rgba(255,255,255,0.16) 0%, rgba(255,255,255,0.05) 100%) !important;
+    backdrop-filter: blur(24px) saturate(200%) contrast(105%) !important;
+    -webkit-backdrop-filter: blur(24px) saturate(200%) contrast(105%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.28) !important;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.55), inset 0 1.5px 0 rgba(255,255,255,0.5), inset 0 -1.5px 0 rgba(255,255,255,0.12) !important;
+  }
+}
