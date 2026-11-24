@@ -2548,3 +2548,11 @@ textarea.form-input::-webkit-resizer {
   .navbar.navbar--compact { bottom: 6px !important; transform: translateX(-50%) scale(0.88) !important; opacity: 0.92; }
   .navbar-link.active { padding: 10px 14px !important; border-radius: 22px !important; }
 }
+
+/* Fix iOS Safari focus glow, active pill height, and compact scroll state */
+.sidebar:not(.active) .info_more-btn::before { opacity: 0 !important; }
+@media (max-width: 580px) {
+  .navbar-link { padding: 10px 10px !important; }
+  .navbar-link.active { padding: 10px 14px !important; background: rgba(255, 219, 112, 0.24) !important; border-radius: 22px !important; }
+  .navbar.navbar--compact { bottom: 4px !important; padding: 2px !important; transform: translateX(-50%) scale(0.84) !important; }
+}
