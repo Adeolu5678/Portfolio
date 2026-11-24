@@ -2468,25 +2468,7 @@ textarea.form-input::-webkit-resizer {
 .case-study-header .project-card-status { position: absolute; top: 0; right: 0; margin: 0; }
 .case-study-title { padding-right: 110px; }
 .project-list { align-items: stretch; }
-.project-item > .project-content { padding-top: 18px; display: flex; flex-direction: column; height: 100%; }
-.project-item .project-title { margin-top: 0; padding-right: 90px; }
-
-.project-item > .project-content { padding-top: 0 !important; }
-
-.project-item .project-title { margin-top: 0 !important; }
-
-.project-item { position: relative !important; padding: 20px !important; }
-.project-item .project-card-status { position: absolute !important; top: 18px !important; right: 18px !important; margin: 0 !important; }
-.project-item .project-title { margin-top: 0 !important; padding-right: 85px !important; }
-
-.project-item .project-card-status { top: 16px !important; right: 16px !important; }
-.project-item .project-category { padding-right: 80px; }
-
-/* Exact match to featured card proportions */
-.project-item { position: relative !important; padding: 25px !important; }
-.project-item > .project-content { position: static !important; padding: 0 !important; }
+.project-item { position: relative; }
+.project-item > .project-content { position: static !important; }
 .project-item .project-card-status { position: absolute !important; top: 16px !important; right: 16px !important; margin: 0 !important; }
-.project-item .project-title { margin-top: 30px !important; padding-right: 0 !important; }
-.project-item .project-category { padding-right: 0 !important; }
-
-
+.project-item .project-title { margin-top: 30px !important; }
