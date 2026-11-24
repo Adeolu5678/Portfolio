@@ -2468,7 +2468,6 @@ textarea.form-input::-webkit-resizer {
 .case-study-header .project-card-status { position: absolute; top: 0; right: 0; margin: 0; }
 .case-study-title { padding-right: 110px; }
 .project-list { align-items: stretch; }
-.project-item { position: relative; }
-.project-item > .project-content { position: static !important; }
-.project-item .project-card-status { position: absolute !important; top: 16px !important; right: 16px !important; margin: 0 !important; }
-.project-item .project-title { margin-top: 30px !important; }
+.project-item > .project-content { position: relative !important; }
+.project-item .project-card-status { position: absolute !important; top: 0 !important; right: 0 !important; margin: 0 !important; }
+.project-item .project-title { margin-top: 0 !important; padding-right: 85px !important; }
