@@ -2498,3 +2498,29 @@ textarea.form-input::-webkit-resizer {
   .certification-item { padding: 14px !important; text-align: center !important; }
   .certification-icon-box, .cert-icon { margin: 0 auto 8px !important; display: flex !important; justify-content: center !important; }
 }
+
+/* Mobile 2-col Certifications + Liquid Glass Navbar */
+@media (max-width: 580px) {
+  .certifications-grid { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 12px !important; }
+  .cert-card { padding: 14px !important; text-align: center !important; }
+  .cert-icon-box { margin: 0 auto 8px !important; display: flex !important; justify-content: center !important; }
+  .navbar {
+    bottom: 12px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: calc(100% - 24px) !important;
+    max-width: 412px !important;
+    border-radius: 28px !important;
+    background: linear-gradient(135deg, rgba(255,255,255,0.14) 0%, rgba(255,255,255,0.04) 50%, rgba(255,255,255,0.10) 100%) !important;
+    backdrop-filter: blur(22px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(22px) saturate(180%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.22) !important;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.55), inset 0 1px 1px rgba(255, 255, 255, 0.35), inset 0 -1px 1px rgba(0, 0, 0, 0.25) !important;
+    padding: 4px !important;
+  }
+  .navbar-link.active {
+    background: rgba(255, 219, 112, 0.18) !important;
+    border-radius: 20px !important;
+    padding: 8px 12px !important;
+  }
+}
