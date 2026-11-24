@@ -2480,3 +2480,7 @@ textarea.form-input::-webkit-resizer {
 .project-item { position: relative !important; padding: 20px !important; }
 .project-item .project-card-status { position: absolute !important; top: 18px !important; right: 18px !important; margin: 0 !important; }
 .project-item .project-title { margin-top: 0 !important; padding-right: 85px !important; }
+
+.project-item { padding: 24px !important; }
+.project-item .project-card-status { top: 16px !important; right: 16px !important; }
+.project-item .project-category { padding-right: 80px; }
