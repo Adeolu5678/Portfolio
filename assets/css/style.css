@@ -2445,3 +2445,11 @@ textarea.form-input::-webkit-resizer {
   transform: translateY(-1px);
   box-shadow: 0 12px 22px rgba(212, 169, 56, 0.22);
 }
+
+@media (min-width: 1024px) {
+  .service-list > .service-item:nth-child(3):last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc((100% - 25px) / 2);
+  }
+}
