@@ -38,21 +38,6 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <!-- Real Liquid Glass SVG Refraction Filter -->
-    <svg style="position: absolute; width: 0; height: 0; pointer-events: none;" aria-hidden="true">
-      <defs>
-        <filter id="liquid-glass" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
-          <feTurbulence type="fractalNoise" baseFrequency="0.015 0.015" numOctaves="2" seed="3" result="noise" />
-          <feGaussianBlur in="noise" stdDeviation="2" result="softNoise" />
-          <feDisplacementMap in="SourceGraphic" in2="softNoise" scale="14" xChannelSelector="R" yChannelSelector="G" result="displaced" />
-          <feSpecularLighting in="softNoise" surfaceScale="3" specularConstant="0.8" specularExponent="25" lighting-color="#ffffff" result="spec">
-            <fePointLight x="150" y="-40" z="120" />
-          </feSpecularLighting>
-          <feComposite in="spec" in2="SourceAlpha" operator="in" result="specClipped" />
-          <feBlend in="displaced" in2="specClipped" mode="screen" />
-        </filter>
-      </defs>
-    </svg>
     <main>
       <!-- ========== SIDEBAR ========== -->
       <aside class="sidebar" data-sidebar>
@@ -1053,8 +1038,22 @@
 
     <!-- Custom JS -->
     <script src="./assets/js/script.js"></script>
+    <script type="module">
+      if (window.innerWidth <= 580) {
+        import('https://cdn.jsdelivr.net/npm/@ybouane/liquidglass/dist/index.js').then(({ LiquidGlass }) => {
+          const navEl = document.querySelector('.navbar');
+          if (navEl) {
+            LiquidGlass.init({
+              root: document.querySelector('main'),
+              glassElements: [navEl]
+            });
+          }
+        }).catch(() => {});
+      }
+    </script>
   </body>
 </html>
+
 
 
 
