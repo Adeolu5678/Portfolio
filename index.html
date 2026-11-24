@@ -480,19 +480,19 @@
                   </div>
                   <div class="case-study-section">
                     <h4>The Problem</h4>
-                    <p>Dutch drivers navigate fragmented parking data across multiple apps, inconsistent pricing, and real-time availability, all while keeping their hands on the wheel.</p>
+                    <p>European drivers face fragmented parking data, inconsistent pricing, and stale availability while on the move.</p>
                   </div>
                   <div class="case-study-section">
                     <h4>The Architecture</h4>
-                    <p>Voice-first interface using Gemini for natural language intent parsing, routed to a server-side aggregation layer that unifies RDW, NPR, and OSM APIs into a single ranked response. Local-first caching layer minimizes redundant API calls and keeps response times under 2 seconds.</p>
+                    <p>Voice-first Gemini intent parsing routed to a server-side aggregator unifying RDW, NPR, and OSM APIs with local-first caching under 2s latency.</p>
                   </div>
                   <div class="case-study-section">
                     <h4>Key Trade-offs</h4>
-                    <p>Gemini inference costs are higher than rule-based NLP, chose AI for intent flexibility across unpredictable voice patterns. Local caching offsets per-query cost by serving repeat requests from memory.</p>
+                    <p>Chose Gemini over rule-based NLP for unpredictable voice patterns; local caching offsets per-query inference cost.</p>
                   </div>
                   <div class="case-study-section">
-                    <h4>Status & Link</h4>
-                    <p>iOS production build actively tested in Dutch urban corridors. Live at <a href="https://vozparking.com" target="_blank" rel="noopener noreferrer" style="color: var(--orange-yellow-crayola); text-decoration: underline;">vozparking.com</a>.</p>
+                    <h4>Status &amp; Link</h4>
+                    <p>Production iOS build live at <a href="https://vozparking.com" target="_blank" rel="noopener noreferrer" style="color: var(--orange-yellow-crayola); display: inline; text-decoration: underline;">vozparking.com</a></p>
                   </div>
                 </div>
               </div>
@@ -515,19 +515,19 @@
                   </div>
                   <div class="case-study-section">
                     <h4>The Problem</h4>
-                    <p>Legal contracts and digital terms of service are notoriously dense and opaque for everyday users. Existing analysis tools are cloud-locked, single-platform, and lack seamless live screen or multi-format document ingestion.</p>
+                    <p>Contracts and terms of service are dense and opaque, while existing tools are cloud-locked and single-platform.</p>
                   </div>
                   <div class="case-study-section">
                     <h4>The Architecture</h4>
-                    <p>Built a production client shipping natively across Android, iOS, Web, macOS, and Windows from a unified Flutter codebase. Integrated on-device Google ML Kit OCR for zero-latency document scanning, Gemini AI with automated fallback routing for high-reliability summarization, and native accessibility platform channels for on-screen terms detection.</p>
+                    <p>Unified Flutter codebase across 5 platforms with on-device Google ML Kit OCR, Gemini fallback routing, and native accessibility channels.</p>
                   </div>
                   <div class="case-study-section">
                     <h4>Key Trade-offs</h4>
-                    <p>Chose Flutter cross-platform architecture with native platform channels over fragmented native codebases. Implemented on-device OCR preprocessing to filter noise before sending structured payloads to the LLM, cutting token usage and inference latency by 45%.</p>
+                    <p>Chose Flutter + native channels over separate codebases; on-device OCR pre-filtering cuts token usage and latency by 45%.</p>
                   </div>
                   <div class="case-study-section">
-                    <h4>Status & Link</h4>
-                    <p>Production release v1.2.0, <a href="https://github.com/Adeolu5678/LegalEase" target="_blank" rel="noopener noreferrer" style="color: var(--orange-yellow-crayola); text-decoration: underline;">View on GitHub</a>.</p>
+                    <h4>Status &amp; Link</h4>
+                    <p>Production release v1.2.0: <a href="https://github.com/Adeolu5678/LegalEase" target="_blank" rel="noopener noreferrer" style="color: var(--orange-yellow-crayola); display: inline; text-decoration: underline;">View on GitHub</a></p>
                   </div>
                 </div>
               </div>
@@ -536,23 +536,6 @@
 
           <section class="projects">
             <ul class="project-list">
-<li class="project-item active featured" data-filter-item data-category="web development">
-                <div class="project-content">
-
-                  <h3 class="project-title">VenturDeck</h3>
-                  <p class="project-category">Startup-Investor Matching Platform</p>
-                  <div class="project-tags">
-                    <span class="tool-tag architecture-tag">Next.js 15</span>
-                    <span class="tool-tag">Convex</span>
-                    <span class="tool-tag">AI</span>
-                  </div>
-                  <div class="case-study-snippet">
-                    <p><strong>The Challenge:</strong> Connecting founders with micro-VCs in a fragmented startup ecosystem.</p>
-                    <p><strong>The Solution:</strong> Built a unified launchpad with AI Traction Scoring, data rooms, and real-time matching.</p>
-                  </div>
-                </div>
-              </li>
-
 <li class="project-item active featured" data-filter-item data-category="web3">
                 <div class="project-content">
 
@@ -569,6 +552,7 @@
                   </div>
                 </div>
               </li>
+
 <li class="project-item active" data-filter-item data-category="edtech">
                 <div class="project-content">
 
@@ -582,6 +566,23 @@
                   <div class="case-study-snippet">
                     <p><strong>The Challenge:</strong> Facilitating secure, trustworthy peer-to-peer academic help with escrow protection.</p>
                     <p><strong>The Solution:</strong> Engineered a collaborative learning marketplace using SKO credits for payment protection.</p>
+                  </div>
+                </div>
+              </li>
+
+<li class="project-item active featured" data-filter-item data-category="web development">
+                <div class="project-content">
+
+                  <h3 class="project-title">VenturDeck</h3>
+                  <p class="project-category">Startup-Investor Matching Platform</p>
+                  <div class="project-tags">
+                    <span class="tool-tag architecture-tag">Next.js 15</span>
+                    <span class="tool-tag">Convex</span>
+                    <span class="tool-tag">AI</span>
+                  </div>
+                  <div class="case-study-snippet">
+                    <p><strong>The Challenge:</strong> Connecting founders with micro-VCs in a fragmented startup ecosystem.</p>
+                    <p><strong>The Solution:</strong> Built a unified launchpad with AI Traction Scoring, data rooms, and real-time matching.</p>
                   </div>
                 </div>
               </li>
@@ -1038,6 +1039,7 @@
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
+
 
 
 

@@ -2462,3 +2462,11 @@ textarea.form-input::-webkit-resizer {
   }
 }
 
+
+/* Ventures card alignment & uniform height */
+.case-study-header { position: relative; }
+.case-study-header .project-card-status { position: absolute; top: 0; right: 0; margin: 0; }
+.case-study-title { padding-right: 110px; }
+.project-list { align-items: stretch; }
+.project-item > .project-content { padding-top: 18px; display: flex; flex-direction: column; height: 100%; }
+.project-item .project-title { margin-top: 0; padding-right: 90px; }
