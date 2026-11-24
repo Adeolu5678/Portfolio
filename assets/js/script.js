@@ -72,6 +72,9 @@ if (filterBtn.length > 0) {
 }
 
 const projectAccessMap = {
+  "Prometheus TSDB Streaming Subquery": { access: "nda" },
+  "Deterministic AI Evaluation & Replay Harness": { access: "nda" },
+  "PersonalOS": { access: "nda" },
   "Command Centre": { access: "nda" },
   "VentureDeck": { access: "nda" },
   "Open-Higgsfield-AI": { access: "nda" },
@@ -373,77 +376,68 @@ function downloadResume() {
         <div class="timeline-item">
           <h4>Certifications & Achievements</h4>
           <span>2022 — 2026</span>
-          <p>• Hedera Certified Developer (HCD) • OpenJS Node.js Application Developer • AWS Certified Developer – Associate • Google Cloud Professional Machine Learning Engineer • Certified Blockchain Developer – Ethereum • Flutter Development Bootcamp (Udemy) • Web Design (iDesign Pro Academy)</p>
+          <p>• Google Cloud Professional Machine Learning Engineer • AWS Certified Developer – Associate • OpenJS Node.js Application Developer • Hedera Certified Developer (HCD) • Certified Blockchain Developer – Ethereum • Goethe-Zertifikat B2</p>
         </div>
       </div>
       
         <div class="section">
           <h3 class="section-title">Engineering & Development</h3>
           <div class="timeline-item">
-            <h4>VozParking — Tech Lead & Lead Engineer</h4>
-            <span>Jan 2026 — Present</span>
-            <p>Architected a voice-first iOS companion for the Dutch parking market with Expo SDK 55 and TypeScript strict mode. Engineered conversational intent parsing with Gemini AI and a local-first caching layer unifying RDW, NPR, and OSM endpoints under 2s latency.</p>
+            <h4>Systems & AI Evaluation Engineering</h4>
+            <span>2026 — Present</span>
+            <p>Engineered the Prometheus TSDB Streaming Subquery Engine (EngineOpts.EnableStreamingSubquery, 5 production Go files, 1,566 substantive LOC) with a deterministic Go test oracle (36 suites / 154 subtest cases, -race, --network none JUnit harness). Audited blind agent rollouts (132 turns, 204 tool calls), built an automated 7-phase static/dynamic review & zero-LLM patch replay CLI (31 unit tests), and authored multi-repo Go/TypeScript benchmarks (tidwall/gjson, mvdan/sh, markdown-it).</p>
           </div>
           <div class="timeline-item">
-            <h4>LegalEase — Creator & Lead Systems Engineer</h4>
-            <span>Oct 2025 — Present</span>
-            <p>Engineered and shipped a production-ready AI legal document assistant across 5 platforms (Android, iOS, Web, Windows, macOS). Implemented on-device Google ML Kit OCR, Gemini AI fallback routing, and native accessibility channels for on-screen terms scanning.</p>
+            <h4>VozParking — Tech Lead & Lead Engineer</h4>
+            <span>Jan 2026 — Present</span>
+            <p>Architected a voice-first Dutch parking companion on Expo (TypeScript strict), Supabase Postgres/RLS, and Supabase Edge Functions (Deno) after migrating off legacy Firebase compute. Engineered Gemini Live (VozAudioDuplex) bidirectional audio streaming inside a 4,250 ms search budget, BackendCache + single-flight deduplication, and expo-secure-store + AsyncStorage.</p>
           </div>
           <div class="timeline-item">
             <h4>PersonalOS — Systems Architect</h4>
             <span>2026 — Present</span>
-            <p>Designed a local-first assistant runtime and canonical memory system built on FastAPI, SQLite, and LanceDB. Implemented desktop computer-use actuation, multi-agent task routing, and an autonomous programmatic video editing engine.</p>
+            <p>Built a local-first assistant runtime and canonical memory engine in Python (FastAPI, SQLite, LanceDB, Typer) with local Ollama embeddings, hybrid lexical/vector retrieval, a 5-tier runtime action policy classifier, Windows desktop actuation with SessionGuard, and 65 pytest test modules.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>LegalEase — Creator & Lead Systems Engineer</h4>
+            <span>Oct 2025 — Present</span>
+            <p>Engineered and shipped an AI legal document assistant (v1.2.0) across 5 platforms (Android, iOS, Web, Windows, macOS) using Flutter/Dart, on-device Google ML Kit OCR, Gemini fallback routing, and native accessibility channels (C++/WinRT & C# UI Automation, Kotlin AccessibilityService, Swift extensions).</p>
           </div>
           <div class="timeline-item">
             <h4>PadeeSpace — Backend Engineer</h4>
             <span>Jan 2026 — Present</span>
-            <p>Architecting escrow-protected payment flows and token-based reward systems for a peer-to-peer tutoring marketplace — enabling trustless transactions between students and tutors.</p>
+            <p>Architected backend services for a peer-to-peer academic tutoring and campus marketplace monorepo (Express, TypeScript, PostgreSQL/Prisma, Redis, Socket.IO) exposing 20 REST API modules, Paystack escrow-protected wallet flows, real-time workspaces, and Gemini AI endpoints.</p>
           </div>
           <div class="timeline-item">
             <h4>StakeIt — Backend & Web3 Lead</h4>
-            <span>November 2025 (Hedera Hackathon Winner)</span>
-            <p>Led Web3 architecture for a decentralized goal accountability platform on Hedera — engineered smart contract staking mechanisms that cryptographically enforce milestone commitments.</p>
+            <span>Nov 2025 · Hedera Hackathon Winner</span>
+            <p>Engineered StakeIt.sol (Solidity ^0.8.19, OpenZeppelin ReentrancyGuard, AccessControl, Pausable, ECDSA) on Hedera Smart Contract Service (HSCS) with Hardhat, daily proof bitmasks, IPFS storage, and HCS timestamping for trustless goal staking.</p>
           </div>
           <div class="timeline-item">
-            <h4>VentureDeck — Founder & Lead Full Stack Developer</h4>
+            <h4>VentureDeck — Founder & Lead Full-Stack Developer</h4>
             <span>Oct 2024 — Present</span>
-            <p>Built a dual-interface startup launchpad with AI-driven traction scoring and real-time founder-to-VC matching on Convex. Full lifecycle ownership from schema design to deployment.</p>
+            <p>Built a dual-interface startup launchpad (Next.js 15, TypeScript, Convex, Clerk) backed by 22 database tables and 32+ serverless functions for AI traction scoring, investor-founder matchmaking, soft-circle commitments, and due diligence data rooms.</p>
           </div>
           <div class="timeline-item">
             <h4>EchoinWhispr — Founder & Lead Engineer</h4>
-            <span>July 2023 — Present</span>
-            <p>Architected a decentralized social protocol with ECIES encryption, IPFS content addressing, and Solidity smart contracts on Hedera for censorship-resistant identity and messaging.</p>
-          </div>
-        </div>
-        
-        <div class="section">
-          <h3 class="section-title">Additional Experience</h3>
-          <div class="timeline-item">
-            <h4>Social Media Manager — Great Eminent RE & Smolux Autos</h4>
-            <span>Oct 2024 — July 2025</span>
-            <p>Orchestrated digital presence for real estate and automotive brands across TikTok and WhatsApp — produced visual content driving qualified sales leads.</p>
+            <span>Jul 2023 — Present</span>
+            <p>Architected a privacy-first anonymous social platform (Next.js, Expo, Convex, Clerk v6, shared TypeScript design-system monorepo) paired with ECIES encryption, IPFS content addressing, and Hedera Solidity smart contracts.</p>
           </div>
           <div class="timeline-item">
-            <h4>Editorial Assistant — The Nigerian Baptist Convention</h4>
-            <span>Oct 2023 — Dec 2023</span>
-            <p>Manuscript proofreading, content coherence, publication quality assurance.</p>
-          </div>
-          <div class="timeline-item">
-            <h4>Founder / Retail Manager — Self-Employed</h4>
-            <span>July 2023 — Present</span>
-            <p>Bootstrapped phone resale business — end-to-end operations including inventory sourcing, pricing strategy, and customer acquisition.</p>
+            <h4>KudiFlow — Mobile & AI Systems Engineer</h4>
+            <span>2026</span>
+            <p>Built an iOS SwiftUI and Firebase AI Logic (Gemini) bookkeeping MVP turning receipt photos, bank alert screenshots, and voice notes into reviewed Firestore accounting ledgers and credit summaries.</p>
           </div>
         </div>
       
       <div class="section">
         <h3 class="section-title">Technical Skills</h3>
         <div class="skills-grid">
-          <div class="skill-item"><span>React / Next.js / TypeScript</span><span>95%</span></div>
-          <div class="skill-item"><span>Flutter / Expo / Mobile Dev</span><span>92%</span></div>
-          <div class="skill-item"><span>Node.js / Express / Python / FastAPI</span><span>90%</span></div>
-          <div class="skill-item"><span>PostgreSQL / Convex / LanceDB / SQLite</span><span>88%</span></div>
-          <div class="skill-item"><span>AI Systems & Agents (Gemini, RAG, n8n)</span><span>90%</span></div>
-          <div class="skill-item"><span>Web3 / Hedera / Solidity / Smart Contracts</span><span>85%</span></div>
+          <div class="skill-item"><span>Go (1.26) / Prometheus TSDB</span><span>94%</span></div>
+          <div class="skill-item"><span>TypeScript / Next.js / Expo</span><span>95%</span></div>
+          <div class="skill-item"><span>Python / FastAPI / Deterministic Verification</span><span>92%</span></div>
+          <div class="skill-item"><span>PostgreSQL / Supabase / Convex / LanceDB</span><span>90%</span></div>
+          <div class="skill-item"><span>AI Evaluation, Gemini Live & Local Agents</span><span>92%</span></div>
+          <div class="skill-item"><span>Solidity / Hedera / Swift / C++/WinRT & Docker</span><span>88%</span></div>
         </div>
         <p style="margin-top: 10px; color: #666; font-size: 12px;"><strong>Languages:</strong> English (C2), German (B2), Yoruba (Native)</p>
       </div>
