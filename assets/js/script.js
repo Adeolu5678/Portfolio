@@ -455,3 +455,19 @@ function downloadResume() {
   printWindow.document.close();
 }
 
+
+// Persist active tab across reloads
+(function () {
+  const savedPage = sessionStorage.getItem("activePortfolioTab");
+  if (savedPage) {
+    const targetBtn = Array.from(navigationLinks).find(
+      (btn) => btn.innerHTML.trim().toLowerCase() === savedPage
+    );
+    if (targetBtn) targetBtn.click();
+  }
+  navigationLinks.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      sessionStorage.setItem("activePortfolioTab", btn.innerHTML.trim().toLowerCase());
+    });
+  });
+})();
