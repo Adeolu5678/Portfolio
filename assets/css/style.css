@@ -2471,3 +2471,9 @@ textarea.form-input::-webkit-resizer {
 .project-item > .project-content { position: relative !important; }
 .project-item .project-card-status { position: absolute !important; top: 0 !important; right: 0 !important; margin: 0 !important; }
 .project-item .project-title { margin-top: 0 !important; padding-right: 85px !important; }
+
+/* Mobile UX polish */
+@media (max-width: 580px) {
+  .navbar-list { justify-content: center !important; padding: 0 10px !important; gap: 4px; }
+  .info_more-btn { min-width: 44px; min-height: 44px; display: flex; align-items: center; justify-content: center; }
+}
