@@ -2537,3 +2537,14 @@ textarea.form-input::-webkit-resizer {
     box-shadow: 0 16px 40px rgba(0,0,0,0.55), inset 0 1.5px 0 rgba(255,255,255,0.5), inset 0 -1.5px 0 rgba(255,255,255,0.12) !important;
   }
 }
+
+/* iOS Safari scroll-compact navbar, fuller active pill, and clean dropdown state */
+.sidebar:not(.active) .info_more-btn,
+.sidebar:not(.active) .info_more-btn:hover,
+.sidebar:not(.active) .info_more-btn:focus { background: var(--border-gradient-onyx) !important; color: var(--orange-yellow-crayola) !important; }
+.sidebar.active .info_more-btn { background: var(--bg-gradient-yellow-1) !important; }
+@media (max-width: 580px) {
+  .navbar { transition: transform 0.28s ease, bottom 0.28s ease, padding 0.28s ease !important; padding: 4px !important; }
+  .navbar.navbar--compact { bottom: 6px !important; transform: translateX(-50%) scale(0.88) !important; opacity: 0.92; }
+  .navbar-link.active { padding: 10px 14px !important; border-radius: 22px !important; }
+}

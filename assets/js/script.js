@@ -471,3 +471,25 @@ function downloadResume() {
     });
   });
 })();
+
+// iOS Safari-style scroll-compact mobile navbar
+(function () {
+  let lastY = window.scrollY;
+  const nav = document.querySelector(".navbar");
+  if (!nav) return;
+  window.addEventListener("scroll", () => {
+    if (window.innerWidth > 580) {
+      nav.classList.remove("navbar--compact");
+      return;
+    }
+    const y = window.scrollY;
+    if (y <= 30) {
+      nav.classList.remove("navbar--compact");
+    } else if (y > lastY + 6) {
+      nav.classList.add("navbar--compact");
+    } else if (y < lastY - 6) {
+      nav.classList.remove("navbar--compact");
+    }
+    lastY = y;
+  }, { passive: true });
+})();
