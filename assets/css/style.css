@@ -2487,3 +2487,14 @@ textarea.form-input::-webkit-resizer {
   .form-input { font-size: 16px !important; }
   .social-list { justify-content: space-between !important; width: 100%; padding: 0 8px; }
 }
+
+/* Mobile Option 2A (What I'm Doing icon-left) & Option 3A (2-col Certs centered icon) & Active Send Btn */
+.form-btn:not([disabled]) { background: var(--orange-yellow-crayola) !important; color: var(--smoky-black) !important; opacity: 1 !important; }
+.form-btn:not([disabled]) ion-icon { color: var(--smoky-black) !important; }
+@media (max-width: 580px) {
+  .service-item { display: flex !important; align-items: center !important; gap: 14px !important; text-align: left !important; padding: 16px !important; }
+  .service-icon-box { margin: 0 !important; }
+  .certifications-list { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 12px !important; }
+  .certification-item { padding: 14px !important; text-align: center !important; }
+  .certification-icon-box, .cert-icon { margin: 0 auto 8px !important; display: flex !important; justify-content: center !important; }
+}
