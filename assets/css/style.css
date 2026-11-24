@@ -2484,3 +2484,10 @@ textarea.form-input::-webkit-resizer {
 .project-item { padding: 24px !important; }
 .project-item .project-card-status { top: 16px !important; right: 16px !important; }
 .project-item .project-category { padding-right: 80px; }
+
+/* Exact match to featured card proportions */
+.project-item { position: relative !important; padding: 25px !important; }
+.project-item > .project-content { position: static !important; padding: 0 !important; }
+.project-item .project-card-status { position: absolute !important; top: 16px !important; right: 16px !important; margin: 0 !important; }
+.project-item .project-title { margin-top: 16px !important; padding-right: 0 !important; }
+.project-item .project-category { padding-right: 0 !important; }
