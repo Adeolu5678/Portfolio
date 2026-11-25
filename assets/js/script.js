@@ -494,7 +494,8 @@ function downloadResume() {
   }, { passive: true });
 })();
 
-// Blur sidebar button on close & robust iOS Safari scroll detection
+
+// Blur sidebar button on close & bounce-proof iOS Safari scroll detection
 (function () {
   const sBtn = document.querySelector("[data-sidebar-btn]");
   const sb = document.querySelector("[data-sidebar]");
@@ -509,9 +510,16 @@ function downloadResume() {
   const onScroll = () => {
     if (window.innerWidth > 580) { nav.classList.remove("navbar--compact"); return; }
     const y = Math.max(window.scrollY || 0, document.documentElement.scrollTop || 0, document.body.scrollTop || 0);
-    if (y <= 25) nav.classList.remove("navbar--compact");
-    else if (y > lastY + 2) nav.classList.add("navbar--compact");
-    else if (y < lastY - 2) nav.classList.remove("navbar--compact");
+    const atBottom = (window.innerHeight + y) >= (document.documentElement.scrollHeight - 24);
+    if (y <= 25) {
+      nav.classList.remove("navbar--compact");
+    } else if (atBottom) {
+      return;
+    } else if (y > lastY + 4) {
+      nav.classList.add("navbar--compact");
+    } else if (y < lastY - 18) {
+      nav.classList.remove("navbar--compact");
+    }
     lastY = y;
   };
   window.addEventListener("scroll", onScroll, { passive: true });

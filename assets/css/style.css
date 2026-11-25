@@ -2556,3 +2556,9 @@ textarea.form-input::-webkit-resizer {
   .navbar-link.active { padding: 10px 14px !important; background: rgba(255, 219, 112, 0.24) !important; border-radius: 22px !important; }
   .navbar.navbar--compact { bottom: 4px !important; padding: 2px !important; transform: translateX(-50%) scale(0.84) !important; }
 }
+
+/* Fix navbar overflow clipping & zero text shift on active tab */
+@media (max-width: 580px) {
+  .navbar { overflow: hidden !important; padding: 4px !important; }
+  .navbar-link, .navbar-link.active { padding: 10px 11px !important; border-radius: 22px !important; }
+}
