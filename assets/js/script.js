@@ -472,27 +472,7 @@ function downloadResume() {
   });
 })();
 
-// iOS Safari-style scroll-compact mobile navbar
-(function () {
-  let lastY = window.scrollY;
-  const nav = document.querySelector(".navbar");
-  if (!nav) return;
-  window.addEventListener("scroll", () => {
-    if (window.innerWidth > 580) {
-      nav.classList.remove("navbar--compact");
-      return;
-    }
-    const y = window.scrollY;
-    if (y <= 30) {
-      nav.classList.remove("navbar--compact");
-    } else if (y > lastY + 6) {
-      nav.classList.add("navbar--compact");
-    } else if (y < lastY - 6) {
-      nav.classList.remove("navbar--compact");
-    }
-    lastY = y;
-  }, { passive: true });
-})();
+
 
 
 // Blur sidebar button on close & bounce-proof iOS Safari scroll detection
@@ -525,3 +505,4 @@ function downloadResume() {
   window.addEventListener("scroll", onScroll, { passive: true });
   document.addEventListener("scroll", onScroll, { passive: true });
 })();
+
