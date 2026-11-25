@@ -432,12 +432,12 @@ function downloadResume() {
       <div class="section">
         <h3 class="section-title">Technical Skills</h3>
         <div class="skills-grid">
-          <div class="skill-item"><span>Go (1.26) / Prometheus TSDB</span><span>94%</span></div>
-          <div class="skill-item"><span>TypeScript / Next.js / Expo</span><span>95%</span></div>
-          <div class="skill-item"><span>Python / FastAPI / Deterministic Verification</span><span>92%</span></div>
-          <div class="skill-item"><span>PostgreSQL / Supabase / Convex / LanceDB</span><span>90%</span></div>
-          <div class="skill-item"><span>AI Evaluation, Gemini Live & Local Agents</span><span>92%</span></div>
-          <div class="skill-item"><span>Solidity / Hedera / Swift / C++/WinRT & Docker</span><span>88%</span></div>
+          <div class="skill-item"><span>Swift / Expo / Flutter (iOS & Android)</span><span>94%</span></div>
+          <div class="skill-item"><span>Next.js / React / TypeScript</span><span>95%</span></div>
+          <div class="skill-item"><span>Node.js / Express / Python / FastAPI</span><span>90%</span></div>
+          <div class="skill-item"><span>Firebase / PostgreSQL / Convex / SQLite</span><span>90%</span></div>
+          <div class="skill-item"><span>AI Systems & Agents (Gemini, RAG)</span><span>90%</span></div>
+          <div class="skill-item"><span>Web3 / Hedera / Solidity</span><span>85%</span></div>
         </div>
         <p style="margin-top: 10px; color: #666; font-size: 12px;"><strong>Languages:</strong> English (C2), German (B2), Yoruba (Native)</p>
       </div>

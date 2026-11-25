@@ -2568,3 +2568,9 @@ textarea.form-input::-webkit-resizer {
   .navbar-list { overflow: visible !important; overflow-x: visible !important; width: 100% !important; justify-content: space-between !important; padding: 0 4px !important; gap: 0 !important; }
   .navbar-link, .navbar-link.active { padding: 9px 8px !important; font-size: 11px !important; white-space: nowrap !important; }
 }
+
+/* Center service-item icons vertically on desktop */
+@media (min-width: 580px) {
+  .service-item { align-items: center !important; }
+  .service-icon-box { margin-top: 0 !important; }
+}
